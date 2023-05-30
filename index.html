@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!-- Doctype HTML is a declaration that tells the browser what version of HTML the document is written in. -->
+<!-- We have other options as well other than html eg -->
+
+<!-- 1. <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">  -->
+<!-- This doctype is used for HTML 4.01 documents that adhere to the strict rules of that specification. It specifies the DTD (Document Type Definition) for HTML 4.01 strict. -->
+
+<!-- 2. <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"> -->
+<!-- This doctype is used for HTML 4.01 documents that allow some deprecated elements and attributes. It specifies the DTD for HTML 4.01 transitional. -->
+
+<!-- 3. <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> -->
+<!-- This doctype is used for XHTML 1.0 strict documents. It specifies the DTD for XHTML 1.0 strict, which is based on XML syntax. -->
+<html lang="en"> <!-- This is the root elements contains all the other html tags-->
+<head> 
+<!-- The <head> element is a container for metadata and is placed between the <html> tag and the <body> tag. -->
+    <meta charset="UTF-8">
+    <!-- The <meta> tag defines metadata about an HTML document. <meta> tags always go inside the <head> element -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <!-- Specifies title for HTML page (displayed on browser tab). If no title is given file name appears on tab -->
+</head>
+<body>
+    <!-- The <body> tag defines the document's body. The <body> element contains all the contents of an HTML document, 
+    such as headings, paragraphs, hyperlinks, lists, etc. There can only be one <body> element in an HTML document.
+    If we add 2 bodies browser will combine them. -->
+    
+    <h1>This is heading</h1> <!-- This is heading tag h1 to h6 (most imp to least)-->
+    <p style="color: red;font-family:courier;" title="Title tooltip">This is paragraph</p> <!-- This is the paragraph tag-->
+    <img src="image_1.png" alt="JS image" width="300" height="300">
+    <!-- The HTML element is everything from the start tag to the end tag -->
+    <!-- Start Tag   Element Content  End tag -->
+    <!--   <h1>      Heading Content    </h1> -->
+    
+    <h1>Formatting</h1>
+    <p>This is <b>bold</b></p> <!-- Defines bold text-->
+    <p>This is <strong>strong</strong></p> <!-- Important text, The content inside is typically displayed in bold.-->
+    <p>This is <italic>italic</italic></p> <!-- Italic text, defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.-->
+    <p>This is <em>em</em></p> <!-- The content inside is typically displayed in italic.  screen reader will pronounce the words in <em> with an emphasis, using verbal stress-->
+    <p>This is <small>small</small></p> <!-- defines smaller text -->
+    <p>This is <mark>mark</mark></p> <!-- defines text that should be marked or highlighted(uses yellow color) -->
+    <p>This is <del>del</del></p> <!-- defines text that has been deleted from a document (strike a line) -->
+    <p>This is <ins>ins</ins></p> <!-- defines a text that has been inserted into a document(underline text) -->
+    <p>This is <sub>sub</sub></p> <!-- defines subscript text(half a character below the normal line), used in formulas -->
+    <p>This is <sup>sup</sup></p> <!-- defines superscript text(half a character above the normal line), used for footnotes -->
+    <hr>
+
+    <h1>Quotations</h1>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">A blockquote paragraph</blockquote> <!-- defines a section that is quoted from another source displayed as indented content -->
+    <p> This is <q>quotation.</q></p> <!-- insert quotation marks around the quotation -->
+    <p>This is <abbr title="Abbreviation">abbr</abbr>.</p>  <!-- defines an abbreviation or an acronym -->
+    <p>This is <address>address</address></p> <!-- defines the contact information for the author/owner of a document -->
+    <hr>
+    <br>
+    <!-- Some tag are self closing tags. They don't have any content. -->
+</body>
+</html>
