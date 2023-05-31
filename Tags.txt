@@ -250,3 +250,41 @@ Character entities are used to display reserved characters in HTML.
 OR
 &#entity_number; -> Browsers may not support all entity names, but the support for entity numbers is good
 To show emoji, use &#Number will display character that is not on your keyboard (&#128516 emoji)
+
+
+-- Forms
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+<form> element is a container for different types of input elements, eg text fields, checkboxes, radio buttons, submit buttons, etc
+If the name attribute is omitted, the value of the input field will not be sent at all.
+The action attribute defines the action to be performed when the form is submitted.
+Usually, the form data is sent to a file on the server when the user clicks on the submit button.
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+<form> element is a container for different types of input elements, eg text fields, checkboxes, radio buttons, submit buttons, etc 
+If the name attribute is omitted, the value of the input field will not be sent at all. 
+The method attribute specifies the HTTP method to be used when submitting the form data. 
+The length of a URL is limited (2048 characters) for Get method 
+POST has no size limitations, and can be used to send large amounts of data. 
+The autocomplete attribute specifies whether a form should have autocomplete on or off.
+autocomplete -> When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+novalidate -> attribute indicates that the form input is not to be validated on submit 
+selected -> To define a pre-selected option, add the selected attribute to the option
+size -> Use the size attribute to specify the number of visible values
+multiple ->Use the multiple attribute to allow the user to select more than one value 
+button -> <button> element defines a clickable button
+fieldset -> <fieldset> element is used to group related data in a form. It draws the rectangle around the fields inside fieldset
+legend -> <legend> element defines a caption for the <fieldset> element. 
+datalist -> <datalist> element specifies a list of pre-defined options for an <input> element
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+output -> The <output> element represents the result of a calculation 
+oninput -> The oninput attribute fires when the value of an <input> or <textarea> element is changed. 
+Tip: This event is similar to the onchange event. The difference is that the oninput event occurs immediately 
+after the value of an element has changed, while onchange occurs when the element loses focus.
+color -> input type color shows color box
+date -> input type date shows calender
+image -> input type image, an image will be displayed instead of submit button
+file -> input type file, allows user to select file.
+hidden -> input type hidden, this field is not visible to user
+time -> input type time, timer picker pops up display hour min and am/pm
+autofocus -> input attribute specifies that the input field should automatically get focus when the page loads.
+formenctype -> The input formenctype attribute specifies how the form-data should be encoded when submitted (only for forms with method="post")
+formnovalidate -> The input attribute, applied to input to bypass validation.

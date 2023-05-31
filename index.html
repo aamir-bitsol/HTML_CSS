@@ -16,7 +16,7 @@
     <meta charset="UTF-8">
     <!-- The <meta> tag defines metadata about an HTML document. <meta> tags always go inside the <head> element -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Title</title>
     <!-- Specifies title for HTML page (displayed on browser tab). If no title is given file name appears on tab -->
     
@@ -173,11 +173,83 @@ table, th, td {
     
     <h1>Computer Code</h1>
     <p>This is <kbd>kbd </kbd> example</p>
+    <!-- This will display the text in different way -->
     <p>This is <samp>samp </samp> example</p>
     <p>This is <var>var </var> example</p>
+    <!-- This will display text in italic -->
     <hr>
 
 
+    <h1>Forms</h1>
+    <!-- An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+    <form> element is a container for different types of input elements, eg text fields, checkboxes, radio buttons, submit buttons, etc 
+    If the name attribute is omitted, the value of the input field will not be sent at all. 
+    The method attribute specifies the HTTP method to be used when submitting the form data. 
+    The length of a URL is limited (2048 characters) for Get method 
+    POST has no size limitations, and can be used to send large amounts of data. 
+    The autocomplete attribute specifies whether a form should have autocomplete on or off.
+    autocomplete -> When autocomplete is on, the browser automatically complete values based on values that the user has entered before.
+    novalidate -> attribute indicates that the form input is not to be validated on submit 
+    selected -> To define a pre-selected option, add the selected attribute to the option
+    size -> Use the size attribute to specify the number of visible values
+    multiple ->Use the multiple attribute to allow the user to select more than one value 
+    button -> <button> element defines a clickable button
+    fieldset -> <fieldset> element is used to group related data in a form. It draws the rectangle around the fields inside fieldset
+    legend -> <legend> element defines a caption for the <fieldset> element. 
+    datalist -> <datalist> element specifies a list of pre-defined options for an <input> element
+    The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+    output -> The <output> element represents the result of a calculation 
+    oninput -> The oninput attribute fires when the value of an <input> or <textarea> element is changed. 
+    Tip: This event is similar to the onchange event. The difference is that the oninput event occurs immediately 
+    after the value of an element has changed, while onchange occurs when the element loses focus.
+    color -> input type color shows color box
+    date -> input type date shows calender
+    image -> input type image, an image will be displayed instead of submit button
+    file -> input type file, allows user to select file.
+    hidden -> input type hidden, this field is not visible to user
+    time -> input type time, timer picker pops up display hour min and am/pm
+    autofocus -> input attribute specifies that the input field should automatically get focus when the page loads.
+    formenctype -> The input formenctype attribute specifies how the form-data should be encoded when submitted (only for forms with method="post")
+    formnovalidate -> The input attribute, applied to input to bypass validation.
+-->
+        <form action="https://google.com" method="GET" autocomplete="off" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <pre>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your Name" autofocus>
+        <input type="radio" name="gender" id="male"> <label for="male">Male</label>
+        <input type="radio" name="gender" id="female"> <label for="female">Female</label>
+        <p>Select Vehicles:</p>
+        <input type="checkbox" name="car" id="car" value="Car"><label for="car">Car</label>
+        <input type="checkbox" name="bike" id="bike" value="Bike"><label for="bike">Bike</label>
+        <input type="email" name="email" id="email" autofocus>
+        
+        <label for="cars">Choose a car:</label>
+        <select id="cars" name="cars" size="3" multiple>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="fiat">Fiat</option>
+        <option value="audi" selected>Audi</option>
+        </select>
+        <label for="text">Write something about yourself:</label>
+        <textarea name="message" rows="3" cols="50" placeholder="Drag to increase size of textarea"></textarea>
+        <button type="button"  onclick="alert('You clicked button')">Button</button>
+        <label for="browsers">What browser you are using: </label><input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+        0 <input type="range" id="a" name="a" value="50" min="0" max="500"> 100 + <input type="number" id="b" name="b" value="10" max="50"> = <output name="x" for="ab"></output>
+        <input type="color" id="favcolor" name="color" value="#000000">
+        <label for="bday">Select your birthday:</label>
+        <input type="date" name="bday" id="bday" min="1996-01-01">
+        <label for="phone">Enter Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="1234-4567890" pattern="[0-9]{4}-[0-9]{7}" required maxlength="12">
+    </pre>
+    <input type="submit" name="submit" id="submit" value="Submit">
+    </form>
 
     <hr>
     <br>
