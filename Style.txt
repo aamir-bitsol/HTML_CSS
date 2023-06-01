@@ -1,0 +1,114 @@
+text-align:center -> align the text to center
+* is CSS universal selector, it selects all the html elements
+If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used. 
+All the styles in a page will "cascade" into a new "virtual" style sheet by the following rules,  where number one has the highest priority
+When using the opacity property to add transparency to the background of an element, all of its child elements inherit the same transparency. This can make the text inside a fully transparent element hard to read
+
+Initial -> The initial keyword is used to set a CSS property to its default value.
+Inherit -> The inherit keyword specifies that a property should inherit its value from its parent element.
+
+background-clip -> defines how far the background (color or image) should extend within an element.(border-box|padding-box|content-box|initial|inherit;)
+    border-box -> Default value. The background extends behind the border	
+    padding-box	-> The background extends to the inside edge of the border	
+    content-box	-> The background extends to the edge of the content box	
+    initial	-> Sets this property to its default value.	
+    inherit	-> Inherits this property from its parent element.
+
+background-position ->  property sets the starting position of a background image. If you only specify one keyword, the other value will be "center"
+    left top, left center, left bottom, right top, center top, center center, center bottom etc
+    X, y % -> The first value is the horizontal position and the second value is the vertical. The top left corner is 0% 0%. The right bottom corner is 100% 100%. If you only specify one value, the other value will be 50%. Default value is: 0% 0%
+
+background-size -> property specifies the size of the background images.
+    percentage -> Sets the width and height of the background image in percent of the parent element. The first value sets the width, the second value sets the height. If only one value is given, the second is set to "auto"	
+    cover -> Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges	
+    contain -> Resize the background image to make sure the image is fully visible
+
+block-size -> property specifies the size of an element in the block direction
+
+vertical margins have no effect on inline 
+
+Lengths in CSS
+Absolute -> absolute length units are fixed and a length expressed in any of these will appear as exactly that size
+    cm	centimeters
+    mm	millimeters
+    in	inches (1in = 96px = 2.54cm)
+    px *	pixels (1px = 1/96th of 1in)
+    pt	points (1pt = 1/72 of 1in)
+    pc	picas (1pc = 12 pt)
+Relative -> Relative length units specify a length relative to another length property. Relative length units scale better between different rendering medium.
+    em	 Relative to the font-size of the element (2em means 2 times the size of the current font)	
+    ex	 Relative to the x-height of the current font (rarely used)	
+    ch	 Relative to the width of the "0" (zero)	
+    rem	 Relative to font-size of the root element	
+    vw	 Relative to 1% of the width of the viewport*	
+    vh	 Relative to 1% of the height of the viewport*	
+    vmin Relative to 1% of viewport's* smaller dimension	
+    vmax Relative to 1% of viewport's* larger dimension	
+    %	 Relative to the parent element
+
+border -> property is a shorthand property for border-(width, style(required), color)
+    border: 5px dotted(solid, dotted, dashed, groove, none, hidden, inset(top-left), outset(left-bottom), double) red;
+
+border-block -> border-block property is dependent on block direction and is a shorthand property for these properties(border-block-(width, style(required), color))
+    border-block: 5px solid red;
+
+border-collapse -> property sets whether table borders should collapse into a single border or be separated as in standard HTML.
+    separate -> Borders are separated; each cell will display its own borders. This is default.	(use border-spacing: 10px for spacing in table cells)
+    collapse -> Borders are collapsed into a single border when possible (border-spacing and empty-cells properties have no effect)
+    border-collapse: separate;
+
+border-end-end-radius -> property defines the radius of the corner at the end in the block and inline directions. 
+    If two values are set; the first one is for the end in the block direction, and the second one is for the end in the inline direction.
+    border-end-end-radius: 50px 20px;
+border-end-start-radius is similar but opposite in direction.
+
+border-image -> property specifies an image to be used as the border around an element.
+    border-image: url(border.png) 30 stretch;
+
+bottom -> property affects the vertical position of a positioned element. This property has no effect on non-positioned elements.
+    If position: absolute; or position: fixed; - the bottom property sets the bottom edge of an element to a unit above/below the bottom edge of its nearest positioned ancestor.
+    If position: relative; - the bottom property makes the element's bottom edge to move above/below its normal position.
+    If position: sticky; - the bottom property behaves like its position is relative when the element is inside the viewport, and like its position is fixed when it is outside.
+    If position: static; - the bottom property has no effect.
+
+box-decoration-break -> property specifies how the background, padding, border, border-image, box-shadow, margin, and clip-path of an element is applied when the box for the element is fragmented.
+    slice -> Default. Box decorations are applied to the element as a whole and break at the edges of the element fragments
+    clone -> Box decorations apply to each fragment of the element as if the fragments were individual elements. Borders wrap the four edges of each fragment of the element, and backgrounds are redrawn in full for each fragment
+
+box-reflect -> property is used to create a reflection of an element
+    none	Default value. No reflection is displayed.	
+    below	Creates a reflection below the element.	
+    above	Creates a reflection above the element.	
+    left	Creates a reflection to the left of the element.	
+    right	Creates a reflection to the right of the element.	
+    position offset	Two value syntax:
+    - position sets reflection below, above, left, or right of the element.
+    - offset sets the distance to the reflection. Distance is set in px, pt, cm, etc. Default value is 0. Read about length units	
+    position offset gradient	Three value syntax:
+    - position sets reflection below, above, left, or right of the element.
+    - offset sets the distance to the reflection. Distance is set in px, pt, cm, etc. Default value is 0. Read about length units
+    - gradient sets a transition for the reflection, i.e. a fading effect.
+
+box-shadow -> property attaches one or more shadows to an element.
+
+    none	    Default value. No shadow is displayed	
+    h-offset	Required. The horizontal offset of the shadow. A positive value puts the shadow on the right side of the box, a negative value puts the shadow on the left side of the box	
+    v-offset	Required. The vertical offset of the shadow. A positive value puts the shadow below the box, a negative value puts the shadow above the box	
+    blur	    Optional. The blur radius. The higher the number, the more blurred the shadow will be	
+    spread	    Optional. The spread radius. A positive value increases the size of the shadow, a negative value decreases the size of the shadow	
+    color	    Optional. The color of the shadow. The default value is the text color. Look at CSS Color Values for a complete list of possible color values.
+    inset	    Optional. Changes the shadow from an outer shadow (outset) to an inner shadow
+    single shadow: box-shadow: 5px 5px blue;
+    multiple shadow: box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green
+
+box-sizing -> property defines how the width and height of an element are calculated: should they include padding and borders, or not.
+    content-box -> Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included	
+    border-box	-> The width and height properties (and min/max properties) includes content, padding and border
+
+clear -> property controls the flow next to floated elements.
+    none	Default. The element is not pushed below left or right floated elements	
+    left	The element is pushed below left floated elements	
+    right	The element is pushed below right floated elements	
+    both	The element is pushed below both left and right floated elements
+
+FlexBox -> Layout system for building responsive website
