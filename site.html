@@ -4,19 +4,89 @@
           <meta charset="UTF-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>MySite</title>
           <link rel="stylesheet" href="style.css" />
-          <link rel="icon" type="image/x-icon" href="image_1.png" />
-
-          <title>Style</title>
+          <link rel="icon" href="images/icon.png" type="image/x-icon" />
      </head>
      <body>
-         <section>
-          <div class="red">red</div>
-          <div class="green">green</div>
-          <div class="blue">blue</div>
-          <div class="red">red</div>
-          <div class="green">green</div>
-          <div class="blue">blue</div>
-         </section>
+          <header>
+               <img
+                    class="logo"
+                    src="images/logo.png"
+                    alt="some random logo"
+                    height="5%"
+                    width="5%"
+               />
+               <nav id="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#intro">Introduction</a>
+                    <a href="#services">Services</a>
+               </nav>
+               <span>
+                    <button>
+                         <a class="contact-link" href="#contact" style="text-decoration: none"
+                              >Contact Us</a
+                         >
+                    </button>
+               </span>
+          </header>
+
+          <article id="intro">
+               <h1 style="text-decoration: underline">Welcome to My Site</h1>
+               <p>
+                    This is a <strong>testing</strong> website. Here is the introduction of my
+                    website.
+               </p>
+          </article>
+
+          <section id="about">
+               <div>
+                    <p>Name: Muhammad Aamir Zaman</p>
+                    <p>Contact: 123456789</p>
+                    <p>Email: email@email.com</p>
+                    <address>Rawalpindi, Pakistan</address>
+               </div>
+               <figure>
+                    <img
+                         class="person-img"
+                         src="images/logo.png"
+                         alt="person image"
+                         height="100vh"
+                         width="100vw"
+                    />
+                    <figcaption>Profile Picture</figcaption>
+               </figure>
+          </section>
+
+          <section id="contact">
+               <form action="" method="post" class="user-input-form">
+                    <figure>
+                         <figcaption>Profile Picture</figcaption>
+                         <img
+                              src="images/customer.png"
+                              alt="your image"
+                              width="80vw"
+                              height="120vh"
+                         />
+                    </figure>
+                    <div class="input-div">
+                         <label for="name">Name: </label>
+                         <input type="text" name="name" id="name" placeholder="Enter your Name" />
+                         <label for="email">Email: </label>
+                         <input
+                              type="email"
+                              name="email"
+                              id="email"
+                              placeholder="Enter your Email"
+                         />
+                         <label for="msg">Message: </label>
+                         <input type="text" name="msg" id="msg" placeholder="Enter your Message" />
+                         <input type="submit" name="submit" id="submit" value="Submit" />
+                    </div>
+               </form>
+          </section>
+          <footer class="copyrights">
+               <p class="asd">&copy; <span> copyrights</span> All rights reserved.</p>
+          </footer>
      </body>
 </html>

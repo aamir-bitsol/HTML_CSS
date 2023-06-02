@@ -1,31 +1,106 @@
-section{
+body{
+    background-color: white;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    height: 90vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 10px;
+}
+
+header{
+    display: flex;
+    padding: 5px 0;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 10px;
+    justify-content: space-around;
     align-items: center;
-    border: 2px dotted black;
 }
 
-.red{ 
-    order:1;
-    flex-grow:1;
-    height: 100px;
-    background-color: red;
+#nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    column-gap: 10px;  
 }
 
-.green{
-    height: 100px;
-    background-color: green;
+.contact-link{
+    align-self: center;
 }
 
-.blue{
-    height: 100px;
-    background-color: blue;
-}
-
-div{
-    border: 5px solid black;
-    padding: 0.5rem;
+#intro{
+    background-image: url("images/bg-img.jpg");
+    background-repeat: no-repeat;
+    background-attachment: local;
+    background-size: cover;
+    border: 2px solid black;
     color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+
+}
+
+#about{
+    font-size: large;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.person-img{
+    display: flex;
+    flex-direction: row;
+}
+
+.copyrights{
+    text-align: center;
+}
+
+.contact-btn{
+    position: inherit;
+}
+#contact{
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user-input-form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top:10px;
+}
+
+#submit{
+    border-radius: 5px;
+    background-color: #1A73E8;
+    padding: 7px;
+    margin-top: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.asd{
+    position: fixed;
+    bottom: 0;
 }
