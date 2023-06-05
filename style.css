@@ -1,31 +1,65 @@
-section{
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-    height: 90vh;
-    align-items: center;
-    border: 2px dotted black;
-}
-
-.red{ 
-    order:1;
-    flex-grow:1;
-    height: 100px;
-    background-color: red;
-}
-
-.green{
-    height: 100px;
-    background-color: green;
-}
-
-.blue{
-    height: 100px;
-    background-color: blue;
-}
-
-div{
-    border: 5px solid black;
-    padding: 0.5rem;
+body{
+    background-color: rgb(125, 117, 117);
     color: white;
+    box-sizing: border-box;
+    display: grid;
+    gap:10px;
+}
+body > * {
+    border: 2px solid black;
+    border-radius: 10px;    
+}
+header{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    place-items: center;
+}
+
+#nav-links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    place-items: center;
+    align-items: center;
+}
+
+
+#intro{
+    text-align: center;
+}
+
+#about{
+    display: grid;
+    padding-left: 20%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+#contact{
+    display: grid;
+    padding-left: 20%;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.user-input-form{
+    display: grid;
+    padding: 5px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.input-div{
+    display: grid;
+    gap: 7px;
+    /* grid-template-rows: repeat(4, 40px);  */
+    /* grid-template-columns: 50px 1fr; */
+}
+
+.copyrights{
+    background-color: white;
+    width: 100%;
+    color: black;
+    border: none;
+    position: fixed;
+    bottom:0%;
+    text-align: center;
 }
